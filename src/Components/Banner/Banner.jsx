@@ -2,6 +2,8 @@ import React from "react";
 import heroImg from "../../assets/hero.png";
 import Banner2 from "./Banner2";
 import BannerCard from "./BannerCard";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
+import { IoLogoAppleAppstore } from "react-icons/io5";
 import { Link, useLoaderData } from "react-router";
 
 const Banner = () => {
@@ -19,11 +21,11 @@ const Banner = () => {
           Apps
         </h1>
         <div className="flex justify-center items-center gap-4">
-          <button className="btn btn-xs sm:btn-sm md:btn-sm lg:btn-sm xl:btn-sm">
-            Play Store
+          <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md xl:btn-md">
+             <IoLogoGooglePlaystore /> Play Store
           </button>
-          <button className="btn btn-xs sm:btn-sm md:btn-sm lg:btn-sm xl:btn-sm">
-            App Store
+          <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md xl:btn-md">
+            <IoLogoAppleAppstore /> App Store
           </button>
         </div>
         <img className="w-100%" src={heroImg} alt="" />

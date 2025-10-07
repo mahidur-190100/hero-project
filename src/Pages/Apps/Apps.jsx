@@ -15,7 +15,7 @@ const Apps = () => {
       </div>
       <div className="flex justify-between items-center">
         <h1>
-          <span>0</span> Apps Found
+          <span>{data.length}</span> Apps Found
         </h1>
         <label className="input">
           <svg

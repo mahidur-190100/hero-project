@@ -1,7 +1,7 @@
 import React from "react";
 import logoImg from "../../assets/logo.png";
-import githubImg from "../../assets/github.png";
 import { Link, Links } from "react-router";
+import { SiGithub } from "react-icons/si";
 
 const Navbar = () => {
   return (
@@ -73,7 +73,7 @@ const Navbar = () => {
         </div>
         <Link className="navbar-end" to="https://github.com/mahidur-190100">
           <div className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] inter-font text-white">
-            <img className="h-8 bg-none " src={githubImg} alt="" />
+            <SiGithub />
             <span>Contribute</span>
           </div>
         </Link>
