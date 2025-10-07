@@ -1,0 +1,29 @@
+import React from "react";
+
+const BannerCard = ({app}) => {
+    // console.log( typeof app);
+    const { image,downloads,ratingAvg,title,companyName } = app;
+  return (
+    <div>
+      
+      <div className="card bg-base-100 w-96 shadow-sm">
+        <figure className="px-10 pt-10">
+          <img
+            src={image}
+            alt="Shoes"
+            className="rounded-xl"
+          />
+        </figure>
+        <div className="card-body items-center text-center">
+          <h2 className="card-title">{title} : {companyName}</h2>
+          <div className="card-actions">
+            <button className="btn btn-primary">{downloads}</button>
+            <button className="btn btn-primary">{ratingAvg}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default BannerCard;
