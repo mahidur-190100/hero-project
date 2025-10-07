@@ -1,5 +1,5 @@
 import React from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 import downloadImg from "../../assets/icon-downloads.png";
 import ratingsImg from "../../assets/icon-ratings.png";
 import reviewImg from "../../assets/icon-review.png";
@@ -20,7 +20,8 @@ const AppDetails = () => {
     );
   }
 
-  const { image, downloads, ratingAvg, title, companyName, reviews,size } = AppCard;
+  const { image, downloads, ratingAvg, title, companyName, reviews, size } =
+    AppCard;
   return (
     <div>
       <div className="hero bg-base-200 min-h-screen">
@@ -49,9 +50,11 @@ const AppDetails = () => {
                 <p>{reviews}</p>
               </div>
             </div>
-            <div className="btn bg-[#00D390] inter-font text-white">
-              Install<span>{size}</span>MB
-            </div>
+            <Link to="/Install">
+              <div className="btn bg-[#00D390] inter-font text-white">
+                Install<span>{size}</span>MB
+              </div>
+            </Link>
           </div>
         </div>
       </div>

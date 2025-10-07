@@ -31,18 +31,14 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <Link to="/">
-                <li>
-                  Home
-                </li>
+                <li>Home</li>
               </Link>
               <Link to={"/Apps"}>
-                <li>
-                  App
-                </li>
+                <li>App</li>
               </Link>
-              <li>
-                Installation
-              </li>
+              <Link to="/Install">
+                <li>Installation</li>
+              </Link>
             </ul>
           </div>
           <Link to="/">
@@ -57,18 +53,14 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 inter-font text-md">
             <Link to="/">
-              <li>
-                Home
-              </li>
+              <li>Home</li>
             </Link>
             <Link to={"/Apps"}>
-              <li>
-                App
-              </li>
+              <li>App</li>
             </Link>
-            <li>
-              Installation
-            </li>
+            <Link to="/Install">
+              <li>Installation</li>
+            </Link>
           </ul>
         </div>
         <Link className="navbar-end" to="https://github.com/mahidur-190100">

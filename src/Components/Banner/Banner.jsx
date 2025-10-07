@@ -21,12 +21,16 @@ const Banner = () => {
           Apps
         </h1>
         <div className="flex justify-center items-center gap-4">
-          <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md xl:btn-md">
-             <IoLogoGooglePlaystore /> Play Store
-          </button>
-          <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md xl:btn-md">
-            <IoLogoAppleAppstore /> App Store
-          </button>
+          <Link to="https://play.google.com/store/games?hl=en">
+            <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md xl:btn-md">
+              <IoLogoGooglePlaystore /> Play Store
+            </button>
+          </Link>
+          <Link to="https://www.apple.com/app-store/">
+            <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md xl:btn-md">
+              <IoLogoAppleAppstore /> App Store
+            </button>
+          </Link>
         </div>
         <img className="w-100%" src={heroImg} alt="" />
       </div>
