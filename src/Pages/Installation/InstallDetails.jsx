@@ -2,10 +2,13 @@ import React from "react";
 import { PiDownloadSimpleThin } from "react-icons/pi";
 import { IoIosStar } from "react-icons/io";
 
-const InstallDetails = ({ app }) => {
-  console.log(app);
-  const { image, title, downloads, ratingAvg, size } = app;
 
+
+const InstallDetails = ({ app }) => {
+  // console.log(app);
+  const { image, title, downloads, ratingAvg, size } = app;
+ 
+ 
   return (
     <div className="bg-[#D9D9D9] py-5">
       <div>
@@ -44,7 +47,7 @@ const InstallDetails = ({ app }) => {
 
           {/* Right side button */}
           <div>
-            <div className="btn bg-[#00D390] inter-font text-white mt-10">
+            <div className="btn bg-[#00D390] inter-font text-white mt-10 ">
               Uninstall
             </div>
           </div>

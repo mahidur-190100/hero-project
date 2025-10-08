@@ -28,4 +28,8 @@ const addToStoreApp =(Id)=>{
     const data = JSON.stringify( StoredAppData)
     localStorage.setItem("InstallList",data)
 }
+
+
+
+
 export {addToStoreApp,getStoreApp}

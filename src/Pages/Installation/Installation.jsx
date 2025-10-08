@@ -6,7 +6,8 @@ import InstallDetails from "./installDetails";
 const Installation = () => {
   const [installAppList, setInstallAppList] = useState([]);
   const data = useLoaderData();
-  console.log(data);
+  // console.log(data);
+  const [sort,setSort]= useState("");
   useEffect(() => {
     const storeAppData = getStoreApp();
     // console.log(storeAppData)
@@ -17,6 +18,40 @@ const Installation = () => {
     );
     setInstallAppList(installApp);
   }, [data]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const handleSort =(type)=>{
+  setSort(type)
+  if (type == "High-Low"){
+    const sortedByHigh =[...installAppList].sort((a,b)=>b.downloads-a.downloads)
+    setInstallAppList (sortedByHigh)
+  }
+  else{
+    const sortedByHigh =[...installAppList].sort((a,b)=>a.downloads-b.downloads)
+    setInstallAppList (sortedByHigh)
+  }
+}
+
+
+
+
+
+
+
+
+
   return (
     <div className="bg-[#D9D9D9]">
       <div className=" w-11/12 mx-auto">
@@ -33,7 +68,17 @@ const Installation = () => {
             <h1 className="font-bold inter-font">
               <span>{installAppList.length} Apps Found</span>
             </h1>
-            sort
+            <details className="dropdown">
+              <summary className="btn m-1">Sort by : {sort?sort:""}</summary>
+              <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                <li>
+                  <a onClick={()=>handleSort("High-Low")}>High-Low</a>
+                </li>
+                <li>
+                  <a onClick={()=>handleSort("Low-High")}>Low-High</a>
+                </li>
+              </ul>
+            </details>
           </div>
         </div>
         <div>
