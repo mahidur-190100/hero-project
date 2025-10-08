@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import { getStoreApp, removeFromStoreApp } from "../../Utility/addToDB"; // import remove
-import InstallDetails from "./installDetails";
+import InstallDetails from "./InstallDetails";
 
 const Installation = () => {
   const [installAppList, setInstallAppList] = useState([]);
