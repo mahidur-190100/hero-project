@@ -42,7 +42,7 @@ const Apps = () => {
           </label>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mx-auto justify-items-center">
           {data.map((app) => (
             <AppCard key={app.id} app={app}></AppCard>
           ))}

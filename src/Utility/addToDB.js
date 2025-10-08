@@ -10,10 +10,6 @@ const getStoreApp =()=>{
     }
 }
 
-
-
-
-
 const addToStoreApp =(Id)=>{
     const StoredAppData = getStoreApp();
 
@@ -29,7 +25,12 @@ const addToStoreApp =(Id)=>{
     localStorage.setItem("InstallList",data)
 }
 
-
-
-
 export {addToStoreApp,getStoreApp}
+
+
+
+export const removeFromStoreApp = (Id) => {
+  const StoredAppData = getStoreApp();
+  const updatedList = StoredAppData.filter(x => String(x) !== String(Id));
+  localStorage.setItem("InstallList", JSON.stringify(updatedList));
+};

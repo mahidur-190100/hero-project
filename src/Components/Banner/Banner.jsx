@@ -42,7 +42,7 @@ const Banner = () => {
           <p className="text-[#627382] inter-font">Explore All Trending Apps on the Market developed by us</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 w-11/12 mx-auto ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 w-11/12 mx-auto justify-items-center ">
           {data.map((app) => (
             <BannerCard key={app.id} app={app}>
               {" "}
