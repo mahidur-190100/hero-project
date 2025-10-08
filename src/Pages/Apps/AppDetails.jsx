@@ -75,7 +75,7 @@ const AppDetails = () => {
                   <p className="text-3xl font-bold inter-font">{reviews}</p>
                 </div>
               </div>
-              <Link to="/Install">
+              <Link to="/Installation">
                 <div className="btn bg-[#00D390] inter-font text-white mt-10" onClick={()=>handleInstall(Id)} >
                     Install Now<span className="inter-font">({size}</span>MB)
                 </div>
