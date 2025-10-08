@@ -2,6 +2,7 @@ import React from "react";
 import AppCard from "./AppCard";
 import { useLoaderData } from "react-router";
 
+
 const Apps = () => {
   const data = useLoaderData();
   console.log(data);

@@ -3,6 +3,7 @@ import { Link, useLoaderData, useParams } from "react-router-dom";
 import downloadImg from "../../assets/icon-downloads.png";
 import ratingsImg from "../../assets/icon-ratings.png";
 import reviewImg from "../../assets/icon-review.png";
+import { addToStoreApp } from "../../Utility/addToDB";
 
 const AppDetails = () => {
   const { Id } = useParams();
@@ -28,8 +29,17 @@ const AppDetails = () => {
     companyName,
     reviews,
     size,
-    description,
+    description
   } = AppCard;
+
+  const handleInstall =Id =>{
+    // store with id
+    // where to stroe
+    // array of collection
+    // exist check
+    // not exist push
+    addToStoreApp(Id)
+  }
   return (
     <div className="bg-[#D9D9D9]">
       <div className=" mx-auto w-11/12">
@@ -66,8 +76,8 @@ const AppDetails = () => {
                 </div>
               </div>
               <Link to="/Install">
-                <div className="btn bg-[#00D390] inter-font text-white mt-10">
-                  Install Now<span className="inter-font">({size}</span>MB)
+                <div className="btn bg-[#00D390] inter-font text-white mt-10" onClick={()=>handleInstall(Id)} >
+                    Install Now<span className="inter-font">({size}</span>MB)
                 </div>
               </Link>
             </div>
