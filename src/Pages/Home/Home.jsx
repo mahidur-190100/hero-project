@@ -5,14 +5,16 @@ import Footer from '../../Components/Footer/Footer'
 
 const Home = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="">
       <Navbar />
 
-      <div className="flex-1">
+      <div className="">
         <Outlet />
       </div>
-
-      <Footer />
+      <div className="">
+        <Footer />
+      </div>
+      
     </div>
   )
 };

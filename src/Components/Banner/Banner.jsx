@@ -11,7 +11,7 @@ const Banner = () => {
   // console.log(data);
   return (
     <div>
-      <div className="text-center flex flex-col justify-center items-center gap-6 px-4  bg-gray-300 ">
+      <div className="text-center flex flex-col justify-center items-center gap-6 px-4  bg-[#D9D9D9] ">
         <h1 className="inter-font text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl font-bold mt-15">
           <span className="text-[#001931] ">We Build</span>
           <br />
@@ -35,25 +35,29 @@ const Banner = () => {
         <img className="w-100%" src={heroImg} alt="" />
       </div>
       <Banner2> </Banner2>
-      <div className="text-center my-10">
-        <h1>Trending Apps</h1>
-        <p>Explore All Trending Apps on the Market developed by us</p>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mx-auto">
-        {data.map((app) => (
-          <BannerCard key={app.id} app={app}>
-            {" "}
-          </BannerCard>
-        ))}
-      </div>
-      {/* // show more button */}
-      <Link to="/Apps">
-        <div className="w-full flex justify-center">
-          <div className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] inter-font text-white justify-center">
-            <span>Show All</span>
-          </div>
+      {/*   */}
+      <div className="bg-[#D9D9D9]">
+        <div className="text-center py-10">
+          <h1 className="text-[#001931] text-6xl inter-font font-bold mb-6 md:mb-8">Trending Apps</h1>
+          <p className="text-[#627382] inter-font">Explore All Trending Apps on the Market developed by us</p>
         </div>
-      </Link>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 w-11/12 mx-auto ">
+          {data.map((app) => (
+            <BannerCard key={app.id} app={app}>
+              {" "}
+            </BannerCard>
+          ))}
+        </div>
+        {/* // show more button */}
+        <Link to="/Apps">
+          <div className="w-full flex justify-center  ] ">
+            <div className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] inter-font text-white justify-center mb-5 mt-10">
+              <span>Show All</span>
+            </div>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 };

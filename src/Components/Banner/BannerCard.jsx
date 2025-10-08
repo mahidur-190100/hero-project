@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router";
+import { PiDownloadSimpleThin } from "react-icons/pi";
+import { IoIosStar } from "react-icons/io";
 
 const BannerCard = ({ app }) => {
   // console.log( typeof app);
-  
-  const { image, downloads, ratingAvg, title, companyName,id } = app;
+
+  const { image, downloads, ratingAvg, title, companyName, id } = app;
   return (
     <Link to={`/AppDetails/${id}`}>
       <div>
@@ -16,9 +18,13 @@ const BannerCard = ({ app }) => {
             <h2 className="card-title">
               {title} : {companyName}
             </h2>
-            <div className="card-actions">
-              <button className="btn btn-primary">{downloads}</button>
-              <button className="btn btn-primary">{ratingAvg}</button>
+            <div className="flex items-center justify-between w-full mt-2">
+              <span className="inline-flex w-fit items-center rounded-xl bg-[#F1F5E8] px-2 py-0.5 text-lg  text-[#00D390] inter-font">
+                <PiDownloadSimpleThin /> {downloads}
+              </span>
+              <span className="inline-flex w-fit items-center rounded-xl  bg-[#FFF0E1] px-2 py-0.5 text-lg  text-[#FF8811] inter-font">
+                <IoIosStar /> {ratingAvg}
+              </span>
             </div>
           </div>
         </div>
@@ -28,4 +34,3 @@ const BannerCard = ({ app }) => {
 };
 
 export default BannerCard;
-

@@ -20,42 +20,63 @@ const AppDetails = () => {
     );
   }
 
-  const { image, downloads, ratingAvg, title, companyName, reviews, size } =
-    AppCard;
+  const {
+    image,
+    downloads,
+    ratingAvg,
+    title,
+    companyName,
+    reviews,
+    size,
+    description,
+  } = AppCard;
   return (
-    <div>
-      <div className="hero bg-base-200 min-h-screen">
-        <div className="hero-content flex-col lg:flex-row">
-          <img src={image} className="max-w-sm rounded-lg shadow-2xl" />
-          <div>
-            <div className="border-b-2 border-gay pb-6">
-              <h1 className="text-5xl font-bold">{title}</h1>
-              <p className="py-6">Developed by: {companyName}</p>
-            </div>
+    <div className="bg-[#D9D9D9]">
+      <div className=" mx-auto w-11/12">
+        <div className="hero min-h-screen items-center justify-items-start">
+          <div className="hero-content flex-col lg:flex-row gap-10">
+            <img src={image} className="max-w-sm rounded-lg shadow-2xl" />
+            <div>
+              <div className="border-b-2 border-gray-500 ">
+                <h1 className="text-5xl font-bold">{title}</h1>
+                <p className="py-6 inter-font font-bold">
+                  Developed by:
+                  <span className="inter-font text-transparent bg-clip-text bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">
+                    {" "}
+                    {companyName}{" "}
+                  </span>{" "}
+                </p>
+              </div>
 
-            <div className="flex gap-4 mt-6">
-              <div>
-                <img src={downloadImg} alt="" />
-                <h1>Downloads</h1>
-                <p>{downloads}</p>
+              <div className="flex gap-20 mt-6">
+                <div>
+                  <img src={downloadImg} alt="" />
+                  <h1 className="inter-font">Downloads</h1>
+                  <p className="text-3xl font-bold inter-font">{downloads}</p>
+                </div>
+                <div>
+                  <img src={ratingsImg} alt="" />
+                  <h1 className="inter-font">Average Ratings</h1>
+                  <p className="text-3xl font-bold inter-font">{ratingAvg}</p>
+                </div>
+                <div>
+                  <img src={reviewImg} alt="" />
+                  <h1 className="inter-font">Total Reviews</h1>
+                  <p className="text-3xl font-bold inter-font">{reviews}</p>
+                </div>
               </div>
-              <div>
-                <img src={ratingsImg} alt="" />
-                <h1>Average Ratings</h1>
-                <p>{ratingAvg}</p>
-              </div>
-              <div>
-                <img src={reviewImg} alt="" />
-                <h1>Total Reviews</h1>
-                <p>{reviews}</p>
-              </div>
+              <Link to="/Install">
+                <div className="btn bg-[#00D390] inter-font text-white mt-10">
+                  Install Now<span className="inter-font">({size}</span>MB)
+                </div>
+              </Link>
             </div>
-            <Link to="/Install">
-              <div className="btn bg-[#00D390] inter-font text-white">
-                Install<span>{size}</span>MB
-              </div>
-            </Link>
           </div>
+        </div>
+        {/* description */}
+        <div className="border-t-2  border-gray-500">
+          <h1 className="inter-font text-xl font-semibold">Description </h1>
+          <p className="inter-font mt-10  text-[#627382]">{description}</p>
         </div>
       </div>
     </div>
