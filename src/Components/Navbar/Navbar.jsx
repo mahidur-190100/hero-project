@@ -36,7 +36,7 @@ const Navbar = () => {
               <Link to={"/Apps"}>
                 <li>App</li>
               </Link>
-              <Link to="/Install">
+              <Link to="/Installation">
                 <li>Installation</li>
               </Link>
             </ul>
@@ -58,7 +58,7 @@ const Navbar = () => {
             <Link to={"/Apps"}>
               <li>App</li>
             </Link>
-            <Link to="/Install">
+            <Link to="/Installation">
               <li>Installation</li>
             </Link>
           </ul>
