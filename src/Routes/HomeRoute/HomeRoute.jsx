@@ -4,7 +4,6 @@ import Banner from '../../Components/Banner/Banner'
 import Apps from '../../Pages/Apps/Apps'
 import Home from '../../Pages/Home/Home'
 import AppDetails from '../../Pages/Apps/AppDetails'
-import Banner2 from '../../Components/Banner/Banner2'
 import Installation from '../../Pages/Installation/Installation'
 
 // Ensure loaders return parsed JSON so useLoaderData() receives arrays/objects
@@ -30,7 +29,7 @@ export const router = createBrowserRouter([
         Component: AppDetails
       },
       {
-        path: '/Install',
+        path: '/Installation',
         loader: () => fetch('/Data.Json').then((res) => res.json()), 
         Component: Installation
       }
