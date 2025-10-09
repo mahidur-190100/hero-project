@@ -4,6 +4,17 @@ import downloadImg from "../../assets/icon-downloads.png";
 import ratingsImg from "../../assets/icon-ratings.png";
 import reviewImg from "../../assets/icon-review.png";
 import { addToStoreApp } from "../../Utility/addToDB";
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Legend,
+  Rectangle,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 const AppDetails = () => {
   const { Id } = useParams();
@@ -30,6 +41,7 @@ const AppDetails = () => {
     reviews,
     size,
     description,
+    ratings,
   } = AppCard;
 
   const handleInstall = (Id) => {
@@ -41,9 +53,9 @@ const AppDetails = () => {
     addToStoreApp(Id);
   };
   return (
-    <div className="bg-[#D9D9D9]">
+    <div className="bg-[#D9D9D9] pb-10">
       <div className=" mx-auto w-11/12">
-        <div className="hero min-h-screen items-center justify-items-start">
+        <div className="hero min-h-screen items-center justify-items-start border-b-2 border-gray-500">
           <div className="hero-content w-full flex-col lg:flex-row gap-6 lg:gap-10">
             <img
               src={image}
@@ -91,10 +103,32 @@ const AppDetails = () => {
             </div>
           </div>
         </div>
-
+        {/* barchart */}
+        <div className="space-y-3 mt-4">
+          <h3 className="inter-font text-4xl font-bold"> Ratings</h3>
+          <div className="p-4 h-80">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart
+                data={ratings} // <-- use the ratings array
+                layout="vertical" // <-- vertical layout puts names on Y axis
+                margin={{ top: 8, right: 20, left: 8, bottom: 8 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis type="number" />
+                <YAxis dataKey="name" type="category" width={80} />
+                <Tooltip />
+                <Bar
+                  dataKey="count" // <-- bar value is count
+                  fill="#FF8811"
+                  activeBar={<Rectangle stroke="orange" />}
+                />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
         {/* description */}
-        <div className="border-t-2  border-gray-500">
-          <h1 className="inter-font text-xl font-semibold">Description </h1>
+        <div className="border-t-2  border-gray-500 mt-10">
+          <h1 className="inter-font text-4xl font-bold mt-10">Description </h1>
           <p className="inter-font mt-10  text-[#627382]">{description}</p>
         </div>
       </div>
@@ -103,3 +137,11 @@ const AppDetails = () => {
 };
 
 export default AppDetails;
+
+// "ratings": [
+//       { "name": "1 star", "count": 70 },
+//       { "name": "2 star", "count": 120 },
+//       { "name": "3 star", "count": 500 },
+//       { "name": "4 star", "count": 1300 },
+//       { "name": "5 star", "count": 1950 }
+//     ]

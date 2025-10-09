@@ -15,7 +15,7 @@ const Apps = () => {
   console.log(searchedApp);
 
   return (
-    <div className="bg-[#D9D9D9]">
+    <div className="bg-[#D9D9D9] pb-6">
       <div className="w-11/12 mx-auto">
         <div className="text-center py-8 inter-font ">
           <h1 className="text-4xl font-bold mt-10 mb-6 md:mb-7">
@@ -26,7 +26,7 @@ const Apps = () => {
           </p>
         </div>
         <div className="flex justify-between items-center py-5">
-          <h1 className="font-bold">
+          <h1 className="font-bold inter-font text-xl">
             <span>{searchedApp.length}</span> Apps Found
           </h1>
           <label className="input">
