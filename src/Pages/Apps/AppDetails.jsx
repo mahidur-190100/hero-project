@@ -29,24 +29,27 @@ const AppDetails = () => {
     companyName,
     reviews,
     size,
-    description
+    description,
   } = AppCard;
 
-  const handleInstall =Id =>{
+  const handleInstall = (Id) => {
     // store with id
     // where to stroe
     // array of collection
     // exist check
     // not exist push
-    addToStoreApp(Id)
-  }
+    addToStoreApp(Id);
+  };
   return (
     <div className="bg-[#D9D9D9]">
       <div className=" mx-auto w-11/12">
         <div className="hero min-h-screen items-center justify-items-start">
-          <div className="hero-content flex-col lg:flex-row gap-10">
-            <img src={image} className="max-w-sm rounded-lg shadow-2xl" />
-            <div>
+          <div className="hero-content w-full flex-col lg:flex-row gap-6 lg:gap-10">
+            <img
+              src={image}
+              className="w-full h-auto max-w-full sm:max-w-sm rounded-lg shadow-2xl"
+            />
+            <div className="w-full">
               <div className="border-b-2 border-gray-500 ">
                 <h1 className="text-5xl font-bold">{title}</h1>
                 <p className="py-6 inter-font font-bold">
@@ -58,7 +61,8 @@ const AppDetails = () => {
                 </p>
               </div>
 
-              <div className="flex gap-20 mt-6">
+              {/* Allow wrap on mobile */}
+              <div className="flex flex-wrap gap-6 sm:gap-10 lg:gap-20 mt-6">
                 <div>
                   <img src={downloadImg} alt="" />
                   <h1 className="inter-font">Downloads</h1>
@@ -75,14 +79,19 @@ const AppDetails = () => {
                   <p className="text-3xl font-bold inter-font">{reviews}</p>
                 </div>
               </div>
+
               <Link to="/Installation">
-                <div className="btn bg-[#00D390] inter-font text-white mt-10" onClick={()=>handleInstall(Id)} >
-                    Install Now<span className="inter-font">({size}</span>MB)
+                <div
+                  className="btn bg-[#00D390] inter-font text-white mt-10"
+                  onClick={() => handleInstall(Id)}
+                >
+                  Install Now<span className="inter-font">({size}</span>MB)
                 </div>
               </Link>
             </div>
           </div>
         </div>
+
         {/* description */}
         <div className="border-t-2  border-gray-500">
           <h1 className="inter-font text-xl font-semibold">Description </h1>
