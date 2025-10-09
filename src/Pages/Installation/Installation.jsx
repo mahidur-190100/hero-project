@@ -47,7 +47,7 @@ const Installation = () => {
   };
 
   return (
-    <div className="bg-[#D9D9D9]">
+    <div className="bg-[#D9D9D9] min-h-screen">
       <div className=" w-11/12 mx-auto">
         <div className="text-center py-10">
           <h1 className="text-4xl font-bold inter-font mb-5">Your Installed Apps</h1>

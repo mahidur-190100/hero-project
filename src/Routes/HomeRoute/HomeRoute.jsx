@@ -17,11 +17,7 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: async () => {
-          await new Promise((r) => setTimeout(r, 800)); // simulate latency
-          const res = await fetch('/Home.json');
-          return res.json();
-        },
+        loader: () => fetch('/Home.json').then((res) => res.json()),
         Component: Banner,
         errorElement: <Error />,
       },
