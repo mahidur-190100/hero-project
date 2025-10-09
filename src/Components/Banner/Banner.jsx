@@ -38,8 +38,12 @@ const Banner = () => {
       {/*   */}
       <div className="bg-[#D9D9D9]">
         <div className="text-center py-10">
-          <h1 className="text-[#001931] text-6xl inter-font font-bold mb-6 md:mb-8">Trending Apps</h1>
-          <p className="text-[#627382] inter-font">Explore All Trending Apps on the Market developed by us</p>
+          <h1 className="text-[#001931] inter-font font-bold mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+            Trending Apps
+          </h1>
+          <p className="text-[#627382] inter-font">
+            Explore All Trending Apps on the Market developed by us
+          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 w-11/12 mx-auto justify-items-center ">

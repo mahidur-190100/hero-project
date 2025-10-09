@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import { getStoreApp, removeFromStoreApp } from "../../Utility/addToDB"; // import remove
-import InstallDetails from "./InstallDetails";
+import InstallDetails from "./installDetails";
+
+
 
 const Installation = () => {
   const [installAppList, setInstallAppList] = useState([]);
@@ -16,17 +18,28 @@ const Installation = () => {
     );
     setInstallAppList(installApp);
   }, [data]);
+  
+
+  const convertToNumber = (value) => {
+  if (typeof value === "number") return value;
+  const val = value.toUpperCase();
+  if (val.includes("M")) return parseFloat(val) * 1_000_000;
+  if (val.includes("K")) return parseFloat(val) * 1_000;
+  return parseFloat(val);
+};
+
+
 
   const handleSort = (type) => {
-    setSort(type);
-    if (type === "High-Low") {
-      const sortedByHigh = [...installAppList].sort((a, b) => b.downloads - a.downloads);
-      setInstallAppList(sortedByHigh);
-    } else {
-      const sortedByLow = [...installAppList].sort((a, b) => a.downloads - b.downloads);
-      setInstallAppList(sortedByLow);
-    }
-  };
+  setSort(type);
+  const sorted = [...installAppList].sort((a, b) => {
+    const aDownloads = convertToNumber(a.downloads);
+    const bDownloads = convertToNumber(b.downloads);
+    return type === "High-Low" ? bDownloads - aDownloads : aDownloads - bDownloads;
+  });
+  setInstallAppList(sorted);
+};
+
 
   const handleUninstall = (id) => {
     removeFromStoreApp(id);

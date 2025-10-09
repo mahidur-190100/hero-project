@@ -2,8 +2,8 @@ import React from "react";
 import logoImg from "../../assets/logo.png";
 const Footer = () => {
   return (
-    <footer className="w-full m-0 mt-auto bg-neutral text-neutral-content">
-      <div className="w-11/12 max-w-7xl mx-auto py-8 flex flex-col sm:flex-row items-start justify-between gap-8">
+    <footer className="bottom-0 left-0 w-full m-0 mt-auto bg-neutral text-neutral-content">
+      <div className="w-11/12 mx-auto py-8 flex flex-col sm:flex-row items-start justify-between gap-8">
         {/* Left: Logo + Title */}
         <div className="flex items-center gap-3">
           <img className="h-10 w-10" src={logoImg} alt="HERO.IO logo" />
