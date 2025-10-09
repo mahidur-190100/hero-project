@@ -1,33 +1,29 @@
-const getStoreApp =()=>{
-    const StoredAppSTR = localStorage.getItem("InstallList")
-    if(StoredAppSTR){
-        const StoredAppData= JSON.parse(StoredAppSTR);
-        return StoredAppData
-
+const getStoreApp = () => {
+  const StoredAppSTR = localStorage.getItem("InstallList");
+  if (StoredAppSTR) {
+    try {
+      return JSON.parse(StoredAppSTR);
+    } catch {
+      return [];
     }
-    else{
-        return [];
-    }
-}
+  }
+  return [];
+};
 
-const addToStoreApp =(Id)=>{
-    const StoredAppData = getStoreApp();
+const addToStoreApp = (Id) => {
+  const StoredAppData = getStoreApp();
 
-    if (StoredAppData.includes(Id)){
-        alert ("Already Installed")
+  const exists = StoredAppData.some(x => String(x) === String(Id));
+  if (exists) {
+    return { status: "exists" };
+  }
 
-    }
-    else{
-        StoredAppData.push(Id)
-    }
-// console.log(StoredAppData) 
-    const data = JSON.stringify( StoredAppData)
-    localStorage.setItem("InstallList",data)
-}
+  const updated = [...StoredAppData, Id];
+  localStorage.setItem("InstallList", JSON.stringify(updated));
+  return { status: "added" };
+};
 
-export {addToStoreApp,getStoreApp}
-
-
+export { addToStoreApp, getStoreApp };
 
 export const removeFromStoreApp = (Id) => {
   const StoredAppData = getStoreApp();

@@ -1,5 +1,5 @@
 [
-  {
+   {
     "image": "https://picsum.photos/seed/taskflow/512/512",
     "title": "TaskFlow",
     "companyName": "HERO.IO Labs",
@@ -8,7 +8,7 @@
     "size": 38.7,
     "reviews": 12345,
     "ratingAvg": 4.49,
-    "downloads": 1200000,
+    "downloads": "1.2M",
     "ratings": [
       { "name": "1 star", "count": 145 },
       { "name": "2 star", "count": 300 },
@@ -26,7 +26,7 @@
     "size": 22.1,
     "reviews": 8920,
     "ratingAvg": 4.39,
-    "downloads": 850000,
+    "downloads": "850K",
     "ratings": [
       { "name": "1 star", "count": 170 },
       { "name": "2 star", "count": 250 },
@@ -44,7 +44,7 @@
     "size": 18.4,
     "reviews": 2340,
     "ratingAvg": 4.23,
-    "downloads": 190000,
+    "downloads": "190K",
     "ratings": [
       { "name": "1 star", "count": 60 },
       { "name": "2 star", "count": 100 },
@@ -62,7 +62,7 @@
     "size": 27.6,
     "reviews": 15600,
     "ratingAvg": 4.36,
-    "downloads": 2400000,
+    "downloads": "2.4M",
     "ratings": [
       { "name": "1 star", "count": 250 },
       { "name": "2 star", "count": 450 },
@@ -80,7 +80,7 @@
     "size": 31.2,
     "reviews": 6780,
     "ratingAvg": 4.38,
-    "downloads": 560000,
+    "downloads": "560K",
     "ratings": [
       { "name": "1 star", "count": 100 },
       { "name": "2 star", "count": 180 },
@@ -98,7 +98,7 @@
     "size": 12.9,
     "reviews": 4120,
     "ratingAvg": 4.48,
-    "downloads": 300000,
+    "downloads": "300K",
     "ratings": [
       { "name": "1 star", "count": 50 },
       { "name": "2 star", "count": 90 },
@@ -116,7 +116,7 @@
     "size": 44.0,
     "reviews": 9505,
     "ratingAvg": 4.22,
-    "downloads": 1100000,
+    "downloads": "1.1M",
     "ratings": [
       { "name": "1 star", "count": 205 },
       { "name": "2 star", "count": 400 },
@@ -134,7 +134,7 @@
     "size": 52.3,
     "reviews": 12010,
     "ratingAvg": 4.29,
-    "downloads": 930000,
+    "downloads": "930K",
     "ratings": [
       { "name": "1 star", "count": 260 },
       { "name": "2 star", "count": 450 },

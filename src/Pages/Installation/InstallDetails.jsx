@@ -1,9 +1,19 @@
 import React from "react";
 import { PiDownloadSimpleThin } from "react-icons/pi";
 import { IoIosStar } from "react-icons/io";
+import { toast } from "react-toastify";
 
 const InstallDetails = ({ app, onUninstall }) => {
   const { id, image, title, downloads, ratingAvg, size } = app;
+
+  const handleUninstallClick = async () => {
+    try {
+      await Promise.resolve(onUninstall?.(id)); // support sync/async
+      toast.success("Successfully uninstalled");
+    } catch {
+      toast.error("Failed to uninstall");
+    }
+  };
 
   return (
     <div className="bg-[#D9D9D9] py-5">
@@ -36,7 +46,7 @@ const InstallDetails = ({ app, onUninstall }) => {
           <div className="w-full sm:w-auto">
             <div
               className="btn bg-[#00D390] inter-font text-white mt-4 sm:mt-10 w-full sm:w-auto"
-              onClick={() => onUninstall?.(id)}
+              onClick={handleUninstallClick}
             >
               Uninstall
             </div>

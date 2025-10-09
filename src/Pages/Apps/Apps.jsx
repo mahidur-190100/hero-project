@@ -12,7 +12,7 @@ const Apps = () => {
   const searchedApp = term
     ? data.filter((app) => app.title.toLocaleLowerCase().includes(term))
     : data;
-  console.log(searchedApp);
+  // console.log(searchedApp);
 
   return (
     <div className="bg-[#D9D9D9] pb-6">
