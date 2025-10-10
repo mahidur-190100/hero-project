@@ -1,14 +1,14 @@
 [
-   {
-    "image": "https://picsum.photos/seed/taskflow/512/512",
-    "title": "TaskFlow",
-    "companyName": "HERO.IO Labs",
+  {
+    "image": "https://picsum.photos/seed/facebook/512/512",
+    "title": "Facebook",
+    "companyName": "Meta Platforms, Inc.",
     "id": 1,
-    "description": "Plan tasks, track progress, and stay focused with smart reminders.",
+    "description": "Connect with friends, share updates, and stay connected across the world.",
     "size": 38.7,
     "reviews": 12345,
     "ratingAvg": 4.49,
-    "downloads": "1.2M",
+    "downloads": "5B+",
     "ratings": [
       { "name": "1 star", "count": 145 },
       { "name": "2 star", "count": 300 },
@@ -18,15 +18,15 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/fitmate/512/512",
-    "title": "FitMate",
-    "companyName": "Nimbus Apps",
+    "image": "https://picsum.photos/seed/twitter/512/512",
+    "title": "Twitter",
+    "companyName": "X Corp.",
     "id": 2,
-    "description": "Personalized workouts, step tracking, and habit streaks.",
+    "description": "Follow what’s happening in real time with tweets, trends, and conversations.",
     "size": 22.1,
     "reviews": 8920,
     "ratingAvg": 4.39,
-    "downloads": "850K",
+    "downloads": "1B+",
     "ratings": [
       { "name": "1 star", "count": 170 },
       { "name": "2 star", "count": 250 },
@@ -36,15 +36,15 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/snapnote/512/512",
-    "title": "SnapNote",
-    "companyName": "Aster Studios",
+    "image": "https://picsum.photos/seed/instagram/512/512",
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
     "id": 3,
-    "description": "Capture notes with your camera and auto-extract text via OCR.",
+    "description": "Share your moments, explore photos, and connect with creators worldwide.",
     "size": 18.4,
     "reviews": 2340,
     "ratingAvg": 4.23,
-    "downloads": "190K",
+    "downloads": "5B+",
     "ratings": [
       { "name": "1 star", "count": 60 },
       { "name": "2 star", "count": 100 },
@@ -54,15 +54,15 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/budgetbee/512/512",
-    "title": "BudgetBee",
-    "companyName": "CleverFin",
+    "image": "https://picsum.photos/seed/youtube/512/512",
+    "title": "YouTube",
+    "companyName": "Google LLC",
     "id": 4,
-    "description": "Track expenses, set budgets, and visualize your spending.",
+    "description": "Watch, upload, and share videos with a global audience.",
     "size": 27.6,
     "reviews": 15600,
     "ratingAvg": 4.36,
-    "downloads": "2.4M",
+    "downloads": "10B+",
     "ratings": [
       { "name": "1 star", "count": 250 },
       { "name": "2 star", "count": 450 },
@@ -72,15 +72,15 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/langleap/512/512",
-    "title": "LangLeap",
-    "companyName": "LinguaWorks",
+    "image": "https://picsum.photos/seed/tiktok/512/512",
+    "title": "TikTok",
+    "companyName": "ByteDance Ltd.",
     "id": 5,
-    "description": "Bite‑size lessons, speech practice, and daily challenges.",
+    "description": "Create and watch short-form videos tailored just for you.",
     "size": 31.2,
     "reviews": 6780,
     "ratingAvg": 4.38,
-    "downloads": "560K",
+    "downloads": "5B+",
     "ratings": [
       { "name": "1 star", "count": 100 },
       { "name": "2 star", "count": 180 },
@@ -90,15 +90,15 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/zentimer/512/512",
-    "title": "ZenTimer",
-    "companyName": "CalmPixel",
+    "image": "https://picsum.photos/seed/spotify/512/512",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
     "id": 6,
-    "description": "Meditation timer with ambient sounds and breathing guides.",
+    "description": "Stream millions of songs and podcasts for free or with premium access.",
     "size": 12.9,
     "reviews": 4120,
     "ratingAvg": 4.48,
-    "downloads": "300K",
+    "downloads": "1B+",
     "ratings": [
       { "name": "1 star", "count": 50 },
       { "name": "2 star", "count": 90 },
@@ -108,15 +108,15 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/routewise/512/512",
-    "title": "RouteWise",
-    "companyName": "Wayfinder Co.",
+    "image": "https://picsum.photos/seed/snapchat/512/512",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
     "id": 7,
-    "description": "Offline maps, live traffic, and smart routing for travel.",
+    "description": "Send snaps, chat with friends, and share your day instantly.",
     "size": 44.0,
     "reviews": 9505,
     "ratingAvg": 4.22,
-    "downloads": "1.1M",
+    "downloads": "1B+",
     "ratings": [
       { "name": "1 star", "count": 205 },
       { "name": "2 star", "count": 400 },
@@ -126,15 +126,15 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/pixelpal/512/512",
-    "title": "PixelPal",
-    "companyName": "Photon Forge",
+    "image": "https://picsum.photos/seed/whatsapp/512/512",
+    "title": "WhatsApp",
+    "companyName": "Meta Platforms, Inc.",
     "id": 8,
-    "description": "One‑tap filters, retouching, and AI background removal.",
+    "description": "Fast, simple, and secure messaging and calling with friends and family.",
     "size": 52.3,
     "reviews": 12010,
     "ratingAvg": 4.29,
-    "downloads": "930K",
+    "downloads": "10B+",
     "ratings": [
       { "name": "1 star", "count": 260 },
       { "name": "2 star", "count": 450 },

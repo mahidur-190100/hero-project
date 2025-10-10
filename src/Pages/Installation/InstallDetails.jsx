@@ -8,7 +8,7 @@ const InstallDetails = ({ app, onUninstall }) => {
 
   const handleUninstallClick = async () => {
     try {
-      await Promise.resolve(onUninstall?.(id)); // support sync/async
+      await Promise.resolve(onUninstall?.(id)); 
       toast.success("Successfully uninstalled");
     } catch {
       toast.error("Failed to uninstall");

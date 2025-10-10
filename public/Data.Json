@@ -1,14 +1,14 @@
 [
   {
-    "image": "https://picsum.photos/seed/taskflow/512/512",
-    "title": "TaskFlow",
-    "companyName": "HERO.IO Labs",
+    "image": "https://picsum.photos/seed/facebook/512/512",
+    "title": "Facebook",
+    "companyName": "Meta Platforms, Inc.",
     "id": 1,
-    "description": "Plan tasks, track progress, and stay focused with smart reminders.",
+    "description": "Connect with friends, share updates, and stay connected across the world.",
     "size": 38.7,
     "reviews": 12345,
     "ratingAvg": 4.49,
-    "downloads": "1.2M",
+    "downloads": "5B+",
     "ratings": [
       { "name": "1 star", "count": 145 },
       { "name": "2 star", "count": 300 },
@@ -18,15 +18,15 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/fitmate/512/512",
-    "title": "FitMate",
-    "companyName": "Nimbus Apps",
+    "image": "https://picsum.photos/seed/twitter/512/512",
+    "title": "Twitter",
+    "companyName": "X Corp.",
     "id": 2,
-    "description": "Personalized workouts, step tracking, and habit streaks.",
+    "description": "Follow what’s happening in real time with tweets, trends, and conversations.",
     "size": 22.1,
     "reviews": 8920,
     "ratingAvg": 4.39,
-    "downloads": "850K",
+    "downloads": "1B+",
     "ratings": [
       { "name": "1 star", "count": 170 },
       { "name": "2 star", "count": 250 },
@@ -36,15 +36,15 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/snapnote/512/512",
-    "title": "SnapNote",
-    "companyName": "Aster Studios",
+    "image": "https://picsum.photos/seed/instagram/512/512",
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
     "id": 3,
-    "description": "Capture notes with your camera and auto-extract text via OCR.",
+    "description": "Share your moments, explore photos, and connect with creators worldwide.",
     "size": 18.4,
     "reviews": 2340,
     "ratingAvg": 4.23,
-    "downloads": "190K",
+    "downloads": "5B+",
     "ratings": [
       { "name": "1 star", "count": 60 },
       { "name": "2 star", "count": 100 },
@@ -54,15 +54,15 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/budgetbee/512/512",
-    "title": "BudgetBee",
-    "companyName": "CleverFin",
+    "image": "https://picsum.photos/seed/youtube/512/512",
+    "title": "YouTube",
+    "companyName": "Google LLC",
     "id": 4,
-    "description": "Track expenses, set budgets, and visualize your spending.",
+    "description": "Watch, upload, and share videos with a global audience.",
     "size": 27.6,
     "reviews": 15600,
     "ratingAvg": 4.36,
-    "downloads": "2.4M",
+    "downloads": "10B+",
     "ratings": [
       { "name": "1 star", "count": 250 },
       { "name": "2 star", "count": 450 },
@@ -72,15 +72,15 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/langleap/512/512",
-    "title": "LangLeap",
-    "companyName": "LinguaWorks",
+    "image": "https://picsum.photos/seed/tiktok/512/512",
+    "title": "TikTok",
+    "companyName": "ByteDance Ltd.",
     "id": 5,
-    "description": "Bite‑size lessons, speech practice, and daily challenges.",
+    "description": "Create and watch short-form videos tailored just for you.",
     "size": 31.2,
     "reviews": 6780,
     "ratingAvg": 4.38,
-    "downloads": "560K",
+    "downloads": "5B+",
     "ratings": [
       { "name": "1 star", "count": 100 },
       { "name": "2 star", "count": 180 },
@@ -90,15 +90,15 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/zentimer/512/512",
-    "title": "ZenTimer",
-    "companyName": "CalmPixel",
+    "image": "https://picsum.photos/seed/spotify/512/512",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
     "id": 6,
-    "description": "Meditation timer with ambient sounds and breathing guides.",
+    "description": "Stream millions of songs and podcasts for free or with premium access.",
     "size": 12.9,
     "reviews": 4120,
     "ratingAvg": 4.48,
-    "downloads": "300K",
+    "downloads": "1B+",
     "ratings": [
       { "name": "1 star", "count": 50 },
       { "name": "2 star", "count": 90 },
@@ -108,15 +108,15 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/routewise/512/512",
-    "title": "RouteWise",
-    "companyName": "Wayfinder Co.",
+    "image": "https://picsum.photos/seed/snapchat/512/512",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
     "id": 7,
-    "description": "Offline maps, live traffic, and smart routing for travel.",
+    "description": "Send snaps, chat with friends, and share your day instantly.",
     "size": 44.0,
     "reviews": 9505,
     "ratingAvg": 4.22,
-    "downloads": "1.1M",
+    "downloads": "1B+",
     "ratings": [
       { "name": "1 star", "count": 205 },
       { "name": "2 star", "count": 400 },
@@ -126,15 +126,15 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/pixelpal/512/512",
-    "title": "PixelPal",
-    "companyName": "Photon Forge",
+    "image": "https://picsum.photos/seed/whatsapp/512/512",
+    "title": "WhatsApp",
+    "companyName": "Meta Platforms, Inc.",
     "id": 8,
-    "description": "One‑tap filters, retouching, and AI background removal.",
+    "description": "Fast, simple, and secure messaging and calling with friends and family.",
     "size": 52.3,
     "reviews": 12010,
     "ratingAvg": 4.29,
-    "downloads": "930K",
+    "downloads": "10B+",
     "ratings": [
       { "name": "1 star", "count": 260 },
       { "name": "2 star", "count": 450 },
@@ -144,219 +144,219 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/chefspark/512/512",
-    "title": "ChefSpark",
-    "companyName": "SizzleSoft",
+    "image": "https://picsum.photos/seed/reddit/512/512",
+    "title": "Reddit",
+    "companyName": "Reddit Inc.",
     "id": 9,
-    "description": "Smart recipes, pantry tracking, and step‑by‑step cooking guides.",
+    "description": "Join communities, share interests, and discuss anything you love.",
     "size": 29.4,
-    "reviews": 7840,
-    "ratingAvg": 4.33,
-    "downloads": "650K",
+    "reviews": 6200,
+    "ratingAvg": 4.31,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 2800 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/linkedin/512/512",
+    "title": "LinkedIn",
+    "companyName": "Microsoft Corporation",
+    "id": 10,
+    "description": "Build your professional network and explore career opportunities.",
+    "size": 33.1,
+    "reviews": 7800,
+    "ratingAvg": 4.35,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 140 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 4300 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/pinterest/512/512",
+    "title": "Pinterest",
+    "companyName": "Pinterest Inc.",
+    "id": 11,
+    "description": "Discover and save creative ideas for every project and passion.",
+    "size": 28.3,
+    "reviews": 5600,
+    "ratingAvg": 4.41,
+    "downloads": "1B+",
     "ratings": [
       { "name": "1 star", "count": 120 },
-      { "name": "2 star", "count": 200 },
-      { "name": "3 star", "count": 900 },
-      { "name": "4 star", "count": 2400 },
-      { "name": "5 star", "count": 4220 }
+      { "name": "2 star", "count": 230 },
+      { "name": "3 star", "count": 540 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 2600 }
     ]
   },
   {
-    "image": "https://picsum.photos/seed/mindmapr/512/512",
-    "title": "MindMapr",
-    "companyName": "MindMesh",
-    "id": 10,
-    "description": "Create beautiful mind maps and brainstorm visually.",
-    "size": 16.8,
-    "reviews": 3560,
-    "ratingAvg": 4.27,
-    "downloads": "420K",
-    "ratings": [
-      { "name": "1 star", "count": 60 },
-      { "name": "2 star", "count": 120 },
-      { "name": "3 star", "count": 450 },
-      { "name": "4 star", "count": 1100 },
-      { "name": "5 star", "count": 1830 }
-    ]
-  },
-  {
-    "image": "https://picsum.photos/seed/cleansweep/512/512",
-    "title": "CleanSweep",
-    "companyName": "ByteBroom",
-    "id": 11,
-    "description": "Free up storage, auto‑clean junk, and boost performance.",
-    "size": 24.5,
-    "reviews": 14300,
-    "ratingAvg": 4.27,
-    "downloads": "3.1M",
-    "ratings": [
-      { "name": "1 star", "count": 220 },
-      { "name": "2 star", "count": 500 },
-      { "name": "3 star", "count": 1700 },
-      { "name": "4 star", "count": 4700 },
-      { "name": "5 star", "count": 7180 }
-    ]
-  },
-  {
-    "image": "https://picsum.photos/seed/studybuddy/512/512",
-    "title": "StudyBuddy",
-    "companyName": "StudyStack",
+    "image": "https://picsum.photos/seed/telegram/512/512",
+    "title": "Telegram",
+    "companyName": "Telegram FZ LLC",
     "id": 12,
-    "description": "Flashcards, spaced repetition, and study timers.",
-    "size": 34.1,
-    "reviews": 5260,
-    "ratingAvg": 4.32,
-    "downloads": "610K",
+    "description": "Cloud-based messaging app with enhanced privacy and speed.",
+    "size": 41.5,
+    "reviews": 11000,
+    "ratingAvg": 4.43,
+    "downloads": "1B+",
     "ratings": [
-      { "name": "1 star", "count": 80 },
-      { "name": "2 star", "count": 150 },
-      { "name": "3 star", "count": 600 },
-      { "name": "4 star", "count": 1600 },
-      { "name": "5 star", "count": 2830 }
-    ]
-  },
-  {
-    "image": "https://picsum.photos/seed/weatherlyapp/512/512",
-    "title": "Weatherly",
-    "companyName": "SkyCast Labs",
-    "id": 13,
-    "description": "Hyperlocal forecasts, storm alerts, and air quality.",
-    "size": 19.7,
-    "reviews": 20480,
-    "ratingAvg": 4.23,
-    "downloads": "4.6M",
-    "ratings": [
-      { "name": "1 star", "count": 400 },
-      { "name": "2 star", "count": 700 },
-      { "name": "3 star", "count": 2500 },
-      { "name": "4 star", "count": 7000 },
-      { "name": "5 star", "count": 9880 }
-    ]
-  },
-  {
-    "image": "https://picsum.photos/seed/habithero/512/512",
-    "title": "HabitHero",
-    "companyName": "StreakWorks",
-    "id": 14,
-    "description": "Build habits with streaks, reminders, and accountability.",
-    "size": 21.3,
-    "reviews": 9900,
-    "ratingAvg": 4.37,
-    "downloads": "1.2M",
-    "ratings": [
-      { "name": "1 star", "count": 150 },
-      { "name": "2 star", "count": 220 },
+      { "name": "1 star", "count": 160 },
+      { "name": "2 star", "count": 300 },
       { "name": "3 star", "count": 1000 },
-      { "name": "4 star", "count": 3000 },
-      { "name": "5 star", "count": 5530 }
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 6000 }
     ]
   },
   {
-    "image": "https://picsum.photos/seed/storywave/512/512",
-    "title": "StoryWave",
-    "companyName": "Wavehouse",
-    "id": 15,
-    "description": "Listen to short stories and podcasts tailored to your taste.",
-    "size": 28.9,
-    "reviews": 2780,
-    "ratingAvg": 4.29,
-    "downloads": "320K",
-    "ratings": [
-      { "name": "1 star", "count": 40 },
-      { "name": "2 star", "count": 70 },
-      { "name": "3 star", "count": 350 },
-      { "name": "4 star", "count": 900 },
-      { "name": "5 star", "count": 1420 }
-    ]
-  },
-  {
-    "image": "https://picsum.photos/seed/shopsmart/512/512",
-    "title": "ShopSmart",
-    "companyName": "Cartwise",
-    "id": 16,
-    "description": "Smart lists, price compare, and coupons for groceries.",
-    "size": 35.2,
-    "reviews": 11650,
-    "ratingAvg": 4.21,
-    "downloads": "2.3M",
+    "image": "https://picsum.photos/seed/discord/512/512",
+    "title": "Discord",
+    "companyName": "Discord Inc.",
+    "id": 13,
+    "description": "Voice, video, and text chat for communities and friends.",
+    "size": 62.0,
+    "reviews": 15000,
+    "ratingAvg": 4.47,
+    "downloads": "500M+",
     "ratings": [
       { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 9350 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/netflix/512/512",
+    "title": "Netflix",
+    "companyName": "Netflix Inc.",
+    "id": 14,
+    "description": "Stream movies, TV shows, and documentaries on demand.",
+    "size": 50.7,
+    "reviews": 18900,
+    "ratingAvg": 4.52,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 10700 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/amazon/512/512",
+    "title": "Amazon",
+    "companyName": "Amazon.com, Inc.",
+    "id": 15,
+    "description": "Shop millions of products with fast delivery and exclusive deals.",
+    "size": 45.8,
+    "reviews": 17000,
+    "ratingAvg": 4.33,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 9500 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/uber/512/512",
+    "title": "Uber",
+    "companyName": "Uber Technologies Inc.",
+    "id": 16,
+    "description": "Book rides quickly with safety and real-time tracking features.",
+    "size": 38.5,
+    "reviews": 9100,
+    "ratingAvg": 4.28,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
       { "name": "2 star", "count": 450 },
-      { "name": "3 star", "count": 1600 },
-      { "name": "4 star", "count": 3800 },
-      { "name": "5 star", "count": 5600 }
-    ]
-  },
-  {
-    "image": "https://picsum.photos/seed/cryptowatch/512/512",
-    "title": "CryptoWatch",
-    "companyName": "BlockPulse",
-    "id": 17,
-    "description": "Track prices, set alerts, and follow your crypto portfolio.",
-    "size": 26.4,
-    "reviews": 6420,
-    "ratingAvg": 4.18,
-    "downloads": "990K",
-    "ratings": [
-      { "name": "1 star", "count": 150 },
-      { "name": "2 star", "count": 280 },
-      { "name": "3 star", "count": 900 },
-      { "name": "4 star", "count": 2000 },
-      { "name": "5 star", "count": 3090 }
-    ]
-  },
-  {
-    "image": "https://picsum.photos/seed/travellist/512/512",
-    "title": "TravelList",
-    "companyName": "Nomad Notes",
-    "id": 18,
-    "description": "Pack smarter with collaborative checklists and templates.",
-    "size": 14.3,
-    "reviews": 3940,
-    "ratingAvg": 4.25,
-    "downloads": "540K",
-    "ratings": [
-      { "name": "1 star", "count": 70 },
-      { "name": "2 star", "count": 120 },
-      { "name": "3 star", "count": 500 },
-      { "name": "4 star", "count": 1300 },
-      { "name": "5 star", "count": 1950 }
-    ]
-  },
-  {
-    "image": "https://picsum.photos/seed/gardengrow/512/512",
-    "title": "GardenGrow",
-    "companyName": "GreenThumb",
-    "id": 19,
-    "description": "Plant care reminders, sunlight tracking, and pest tips.",
-    "size": 17.5,
-    "reviews": 1860,
-    "ratingAvg": 4.29,
-    "downloads": "180K",
-    "ratings": [
-      { "name": "1 star", "count": 20 },
-      { "name": "2 star", "count": 40 },
-      { "name": "3 star", "count": 260 },
-      { "name": "4 star", "count": 600 },
-      { "name": "5 star", "count": 940 }
-    ]
-  },
-  {
-    "image": "https://picsum.photos/seed/sleepsound/512/512",
-    "title": "SleepSound",
-    "companyName": "Moonlight Labs",
-    "id": 20,
-    "description": "Sleep sounds, bedtime stories, and smart wake alarms.",
-    "size": 23.0,
-    "reviews": 8150,
-    "ratingAvg": 4.37,
-    "downloads": "1.5M",
-    "ratings": [
-      { "name": "1 star", "count": 100 },
-      { "name": "2 star", "count": 180 },
-      { "name": "3 star", "count": 800 },
+      { "name": "3 star", "count": 1100 },
       { "name": "4 star", "count": 2600 },
-      { "name": "5 star", "count": 4470 }
+      { "name": "5 star", "count": 4650 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/zoom/512/512",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications",
+    "id": 17,
+    "description": "Video meetings and collaboration for work, school, and personal use.",
+    "size": 60.1,
+    "reviews": 13400,
+    "ratingAvg": 4.44,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 8700 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/slack/512/512",
+    "title": "Slack",
+    "companyName": "Salesforce Inc.",
+    "id": 18,
+    "description": "Collaborate with teams through messaging, channels, and integrations.",
+    "size": 55.0,
+    "reviews": 10200,
+    "ratingAvg": 4.40,
+    "downloads": "100M+",
+    "ratings": [
+      { "name": "1 star", "count": 140 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 5760 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/gmail/512/512",
+    "title": "Gmail",
+    "companyName": "Google LLC",
+    "id": 19,
+    "description": "Secure and reliable email with powerful spam protection and integrations.",
+    "size": 46.3,
+    "reviews": 20000,
+    "ratingAvg": 4.51,
+    "downloads": "10B+",
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 10350 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/airbnb/512/512",
+    "title": "Airbnb",
+    "companyName": "Airbnb Inc.",
+    "id": 20,
+    "description": "Find unique places to stay and experiences around the world.",
+    "size": 47.7,
+    "reviews": 9200,
+    "ratingAvg": 4.46,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 220 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 4970 }
     ]
   }
 ]
