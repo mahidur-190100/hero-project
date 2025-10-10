@@ -10,11 +10,10 @@ const Apps = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    // Trim and lowercase the search term fo equal name
     const term = search.trim().toLocaleLowerCase();
-    // Whenever search changes, show spinner
+
     setLoading(true);
-//  dalay for see spinner
+
     const timeout = setTimeout(() => {
       const results = term
         ? data.filter((app) => app.title.toLocaleLowerCase().includes(term))
@@ -22,7 +21,7 @@ const Apps = () => {
 
       setFilteredApps(results);
       setLoading(false);
-    }, 800); 
+    }, 800);
 
     return () => clearTimeout(timeout);
   }, [search, data]);
@@ -70,13 +69,17 @@ const Apps = () => {
           </label>
         </div>
 
-        {/* Spinner  */}
-        {loading ? (
-          <div className="flex justify-center items-center py-20">
-            <span className="loading loading-spinner text-primary w-16 h-16"></span>
-            <p className="inter-font text-4xl">Data is searching</p>
-          </div>
-        ) : (
+        {/* Keep the same grid layout, only overlay spinner */}
+        <div className="relative">
+          {loading && (
+            <div className="absolute inset-0 flex flex-col justify-center items-center bg-[#d9d9d9]/70 backdrop-blur-sm rounded-xl z-10">
+              <span className="loading loading-spinner text-primary w-16 h-16"></span>
+              <p className="inter-font text-2xl mt-4 font-semibold text-[#632EE3]">
+                Data is searching...
+              </p>
+            </div>
+          )}
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-10 place-items-stretch">
             {filteredApps.length === 0 ? (
               <div className="col-span-full flex flex-col items-center justify-center gap-4 py-10 text-center">
@@ -96,7 +99,7 @@ const Apps = () => {
               filteredApps.map((app) => <AppCard key={app.id} app={app} />)
             )}
           </div>
-        )}
+        </div>
       </div>
     </div>
   );
