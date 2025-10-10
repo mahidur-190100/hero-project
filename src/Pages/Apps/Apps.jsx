@@ -1,19 +1,31 @@
-
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AppCard from "./AppCard";
 import { Link, useLoaderData } from "react-router";
 import appErrorImg from "../../assets/App-Error.png";
 
 const Apps = () => {
   const data = useLoaderData();
-  // console.log(data);
   const [search, setSearch] = useState("");
-  // console.log(search)
-  const term = search.trim().toLocaleLowerCase();
-  const searchedApp = term
-    ? data.filter((app) => app.title.toLocaleLowerCase().includes(term))
-    : data;
-  // console.log(searchedApp);
+  const [filteredApps, setFilteredApps] = useState(data);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    // Trim and lowercase the search term fo equal name
+    const term = search.trim().toLocaleLowerCase();
+    // Whenever search changes, show spinner
+    setLoading(true);
+//  dalay for see spinner
+    const timeout = setTimeout(() => {
+      const results = term
+        ? data.filter((app) => app.title.toLocaleLowerCase().includes(term))
+        : data;
+
+      setFilteredApps(results);
+      setLoading(false);
+    }, 800); 
+
+    return () => clearTimeout(timeout);
+  }, [search, data]);
 
   return (
     <div className="bg-[#D9D9D9] pb-6">
@@ -26,9 +38,10 @@ const Apps = () => {
             Explore All Apps on the Market developed by us. We code for Millions
           </p>
         </div>
+
         <div className="flex justify-between items-center py-5">
           <h1 className="font-bold inter-font text-xl">
-            <span>{searchedApp.length}</span> Apps Found
+            <span>{filteredApps.length}</span> Apps Found
           </h1>
           <label className="input">
             <svg
@@ -57,25 +70,33 @@ const Apps = () => {
           </label>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-10 place-items-stretch">
-          {searchedApp.length === 0 ? (
-            <div className="col-span-full flex flex-col items-center justify-center gap-4 py-10 text-center">
-              <img src={appErrorImg} alt="" />
-              <p className="text-center text-4xl col-span-full inter-font font-bold">
-                OPPS!! APP NOT FOUND
-              </p>
-              <button
-                type="button"
-                onClick={() => setSearch("")}
-                className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] inter-font text-white"
-              >
-                Go Back!
-              </button>
-            </div>
-          ) : (
-            searchedApp.map((app) => <AppCard key={app.id} app={app} />)
-          )}
-        </div>
+        {/* Spinner  */}
+        {loading ? (
+          <div className="flex justify-center items-center py-20">
+            <span className="loading loading-spinner text-primary w-16 h-16"></span>
+            <p className="inter-font text-4xl">Data is searching</p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-10 place-items-stretch">
+            {filteredApps.length === 0 ? (
+              <div className="col-span-full flex flex-col items-center justify-center gap-4 py-10 text-center">
+                <img src={appErrorImg} alt="" />
+                <p className="text-center text-4xl col-span-full inter-font font-bold">
+                  OPPS!! APP NOT FOUND
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setSearch("")}
+                  className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] inter-font text-white"
+                >
+                  Go Back!
+                </button>
+              </div>
+            ) : (
+              filteredApps.map((app) => <AppCard key={app.id} app={app} />)
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

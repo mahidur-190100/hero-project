@@ -43,10 +43,10 @@ const AppDetails = () => {
     ratings,
   } = AppCard;
 
-  // State: Installed or not
+  //  Installed or not er jonne state
   const [isInstalled, setIsInstalled] = useState(false);
 
-  //Load from localStorage when component mounts
+  //Load from localStorage 
   useEffect(() => {
     const stored = localStorage.getItem(`installed-${AppCard.id}`);
     if (stored === "true") {
@@ -54,17 +54,14 @@ const AppDetails = () => {
     }
   }, [AppCard.id]);
 
-  // ✅ Handle Install
+  // hnadle the install funtion
   const handleInstall = (id) => {
     const res = addToStoreApp(id);
     if (res?.status === "added") {
       toast.success("Added to Installation");
     } else if (res?.status === "exists") {
       toast.info("Already Installed");
-    } else {
-      toast.error("Something went wrong");
-    }
-
+    } 
     setIsInstalled(true);
     localStorage.setItem(`installed-${id}`, "true");
   };
@@ -109,8 +106,6 @@ const AppDetails = () => {
                   <p className="text-3xl font-bold inter-font">{reviews}</p>
                 </div>
               </div>
-
-              {/* ✅ Only Install button (no uninstall) */}
               <button
                 onClick={() => handleInstall(AppCard.id)}
                 disabled={isInstalled}
@@ -126,7 +121,7 @@ const AppDetails = () => {
           </div>
         </div>
 
-        {/* Ratings Chart */}
+        {/*  Chart */}
         <div className="space-y-3 mt-4">
           <h3 className="inter-font text-4xl font-bold">Ratings</h3>
           <div className="p-4 h-80">
