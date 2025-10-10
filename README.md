@@ -1,16 +1,54 @@
-# React + Vite
+# 🛍️ React-AppStore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive App Store web application built using **React.js**, where users can explore, search, install, and manage applications — just like a real app marketplace.  
 
-Currently, two official plugins are available:
+The project showcases app browsing, live search, installation management (via LocalStorage), data visualization, and smooth navigation with loading animations.
+Features
+Home Page
+- Beautiful banner with center-aligned heading, text, and two buttons:  
+  - App Store → redirects to App Store  
+  - Play Store → redirects to Play Store  
+- States Section showing platform or user stats.  
+- Top Apps Section displaying 8 featured apps (title, image, downloads, and rating).  
+- Show All button navigates to the All Apps page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+All Apps Page
+- Displays all apps from the JSON dataset (20 apps).  
+- Live search bar that filters apps in real time .  
+- Shows total number of apps found.  
+- No App Found message with a friendly error image if nothing matches.  
+- Spinner animation during search operations.
 
-## React Compiler
+App Details Page
+- Displays selected app’s image, title, description, and details.  
+- Shows:
+  - Average rating  
+  - Download count  
+  - Review count  
+- Install button:
+  - Once clicked, it shows a success toast and becomes disabled with “Installed” text.
+  - Installed apps are saved in LocalStorage.
+- Review Chart created using Recharts to visualize rating distribution (1–5 stars).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ My Installation Page
+- Displays all installed apps retrieved from LocalStorage.  
+- Each app card includes:
+  - Title, image, download count, and rating.
+  - Uninstall button
+    - Removes the app from UI and LocalStorage.
+    - Shows a relevant toast message.  
+- Includes a Sort by Downloads dropdown:
+  - High → Low  
+  - Low → High  
 
-## Expanding the ESLint configuration
+Technology-
+React.js	
+React Router	
+HTML5	
+CSS3 / TailwindCSS	
+JavaScript (ES6)	
+Recharts	
+LocalStorage API	
+Toast Library 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
